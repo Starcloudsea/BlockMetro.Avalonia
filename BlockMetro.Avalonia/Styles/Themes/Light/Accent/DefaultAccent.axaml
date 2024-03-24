@@ -1,6 +1,6 @@
 <ResourceDictionary xmlns="https://github.com/avaloniaui"
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
-	<!-- Accent Colors -->
+	<!-- Default Accent Colors -->
 	<Color x:Key="BrightBlueAccent">#0077FF</Color>
 	<Color x:Key="BrightRedAccent">#FF0000</Color>
 	<Color x:Key="GrassBlockGreenAccent">#218306</Color>
@@ -52,4 +52,6 @@
 	<Color x:Key="FairyTeaGreenAccent">#525E54</Color>
 	<Color x:Key="DesertCamouflageAccent">#847545</Color>
 	<Color x:Key="ProtectiveColorAccent">#7E735F</Color>
+	<Color x:Key="AccentDisabled">#BFBFBF</Color>
+	
 </ResourceDictionary>

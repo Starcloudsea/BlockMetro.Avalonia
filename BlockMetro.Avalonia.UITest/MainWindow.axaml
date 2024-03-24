@@ -6,6 +6,6 @@
         x:Class="BlockMetro.Avalonia.UITest.MainWindow"
         Title="BlockMetro.Avalonia.UITest">
 	<Grid>
-		<Button Background="{DynamicResource BrightBlueAccent}"/>
+		<Button Height="40" Width="100" Content="ADCC" Background="{DynamicResource GlobalDefaultAccent}" Click="MyButton_Click"/>
 	</Grid>
 </Window>

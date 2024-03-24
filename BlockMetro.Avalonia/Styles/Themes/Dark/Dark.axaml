@@ -1,0 +1,11 @@
+<ResourceDictionary xmlns="https://github.com/avaloniaui"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<ResourceDictionary.MergedDictionaries>
+		<!--Color-->
+		<ResourceInclude Source="avares://BlockMetro.Avalonia/Styles/Themes/Dark/Fill.axaml"/>
+		<!--AccentColor-->
+		<ResourceInclude Source="avares://BlockMetro.Avalonia/Styles/Themes/Dark/Accent/DefaultAccent.axaml"/>
+		<ResourceInclude Source="avares://BlockMetro.Avalonia/Styles/Themes/Dark/Accent/SecondaryAccent.axaml"/>
+		<ResourceInclude Source="avares://BlockMetro.Avalonia/Styles/Themes/Dark/Accent/TertiaryAccent.axaml"/>
+	</ResourceDictionary.MergedDictionaries>
+</ResourceDictionary>
