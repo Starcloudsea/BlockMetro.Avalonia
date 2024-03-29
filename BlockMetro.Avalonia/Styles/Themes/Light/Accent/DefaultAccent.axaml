@@ -52,6 +52,6 @@
 	<Color x:Key="FairyTeaGreenAccent">#525E54</Color>
 	<Color x:Key="DesertCamouflageAccent">#847545</Color>
 	<Color x:Key="ProtectiveColorAccent">#7E735F</Color>
-	<Color x:Key="AccentDisabled">#BFBFBF</Color>
+	<Color x:Key="DisabledAccent">#BFBFBF</Color>
 	
 </ResourceDictionary>

@@ -2,7 +2,7 @@
                     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
 	<!-- Tertiary Accent Colors -->
 	<Color x:Key="BrightBlueTertiaryAccent">#3292FF</Color>
-	<Color x:Key="BrightRedTertiaryAccent">#FF3232</Color>
+	<Color x:Key="BrightRedTertiaryAccent">#FF5050</Color>
 	<Color x:Key="GrassBlockGreenTertiaryAccent">#279D07</Color>
 	<Color x:Key="CreeperGreenTertiaryAccent">#47AC3D</Color>
 	<Color x:Key="GoldTertiaryAccent">#FFC732</Color>

@@ -4,8 +4,18 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         mc:Ignorable="d" d:DesignWidth="800" d:DesignHeight="450"
         x:Class="BlockMetro.Avalonia.UITest.MainWindow"
+		xmlns:bmc="using:BlockMetro.Avalonia.Controls"
         Title="BlockMetro.Avalonia.UITest">
-	<Grid>
-		<Button Height="40" Width="100" Content="ADCC" Background="{DynamicResource GlobalDefaultAccent}" Click="MyButton_Click"/>
-	</Grid>
+	<StackPanel Spacing="10" VerticalAlignment="Center">
+		<Button Height="40" Width="150" Content="BlockMetro!" Classes="AccentButton" Click="MyButton_Click" FontFamily="{StaticResource SourceHanSans}"/>
+		<DropDownButton Content="1145" Height="40" Width="150">
+			<DropDownButton.Flyout>
+				<MenuFlyout>
+					<MenuItem Header="Item 2" InputGesture="Ctrl+A" />
+					<MenuItem Header="Item 3" />
+				</MenuFlyout>
+			</DropDownButton.Flyout>
+		</DropDownButton>
+		<bmc:FontIcon Glyph="&#xEA08;" x:Name="TEVST" FontSize="40"/>
+	</StackPanel>
 </Window>

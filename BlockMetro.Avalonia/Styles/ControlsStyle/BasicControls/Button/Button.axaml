@@ -1,0 +1,96 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+	<Design.PreviewWith>
+		<Border Padding="50">
+			<StackPanel Spacing="5">
+				<Button Height="40" Width="150" Content="BlockMetro!"  FontFamily="{StaticResource SourceHanSans}"/>
+				<Button Height="40" Width="150" Content="BlockMetro!" Classes="BorderedButton" FontFamily="{StaticResource SourceHanSans}"/>
+				<Button Height="40" Width="150" Content="BlockMetro!" Classes="AccentButton" FontFamily="{StaticResource SourceHanSans}"/>
+				<Button Height="40" Width="150" Content="BlockMetro!" Classes="BorderedAccentButton" FontFamily="{StaticResource SourceHanSans}"/>
+			</StackPanel>
+		</Border>
+	</Design.PreviewWith>
+	<!--Button-->
+	<Style Selector="Button">
+    	<Setter Property="Background" Value="{DynamicResource DefaultSubControlFill}"/>
+    	<Setter Property="Foreground" Value="{DynamicResource DefaultTextFill}"/>
+		<Setter Property="FontSize" Value="17"/>
+	    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+	    <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+	<Style Selector="Button:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource SecondarySubControlFill}"/>
+    </Style>
+    <Style Selector="Button:pressed /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource TertiarySubControlFill}"/>
+    </Style>
+	<Style Selector="Button:disabled">
+		<Setter Property="Background" Value="{DynamicResource DisabledControlFill}"/>
+		<Setter Property="Foreground" Value="{DynamicResource DisabledTextFill}"/>
+	</Style>
+	
+	<!--Bordered Button-->
+    <Style Selector="Button.BorderedButton">
+    	<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="BorderBrush" Value="{DynamicResource DefaultSubControlFill}"/>
+    	<Setter Property="Foreground" Value="{DynamicResource DefaultTextFill}"/>
+		<Setter Property="FontSize" Value="17"/>
+		<Setter Property="BorderThickness" Value="2"/>
+	    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+	    <Setter Property="VerticalContentAlignment" Value="Center"/>
+    </Style>
+	<Style Selector="Button.BorderedButton:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource TertiarySubControlFill}"/>
+    </Style>
+    <Style Selector="Button.BorderedButton:pressed /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource SecondarySubControlFill}"/>
+    </Style>
+	<Style Selector="Button.BorderedButton:disabled">
+		<Setter Property="BorderBrush" Value="{DynamicResource DisabledControlFill}"/>
+		<Setter Property="Foreground" Value="{DynamicResource DisabledTextFill}"/>
+	</Style>
+	
+	<!--AccentButton-->
+	<Style Selector="Button.AccentButton">
+		<Setter Property="Background" Value="{DynamicResource GlobalDefaultAccent}"/>
+		<Setter Property="Foreground" Value="{DynamicResource DefaultAccentTextFill}"/>
+		<Setter Property="FontSize" Value="17"/>
+		<Setter Property="HorizontalContentAlignment" Value="Center"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+	</Style>
+	<Style Selector="Button.AccentButton:pointerover /template/ ContentPresenter">
+		<Setter Property="Background" Value="{DynamicResource GlobalSecondaryAccent}"/>
+	</Style>
+	<Style Selector="Button.AccentButton:pressed /template/ ContentPresenter">
+		<Setter Property="Background" Value="{DynamicResource GlobalTertiaryAccent}"/>
+	</Style>
+	<Style Selector="Button.AccentButton:disabled">
+		<Setter Property="Background" Value="{DynamicResource DisabledAccent}"/>
+		<Setter Property="Foreground" Value="{DynamicResource DefaultAccentTextFill}"/>
+	</Style>
+	
+	<!--Bordered Accent Button-->
+    <Style Selector="Button.BorderedAccentButton">
+    	<Setter Property="Background" Value="Transparent"/>
+		<Setter Property="BorderBrush" Value="{DynamicResource GlobalDefaultAccent}"/>
+    	<Setter Property="Foreground" Value="{DynamicResource GlobalDefaultAccent}"/>
+		<Setter Property="FontSize" Value="17"/>
+		<Setter Property="BorderThickness" Value="2"/>
+	    <Setter Property="HorizontalContentAlignment" Value="Center"/>
+	    <Setter Property="VerticalContentAlignment" Value="Center"/>
+	
+    </Style>
+	<Style Selector="Button.BorderedAccentButton:pointerover /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource GlobalTertiaryAccent}"/>
+		<Setter Property="Foreground" Value="{DynamicResource DefaultAccentTextFill}"/>
+
+	</Style>
+    <Style Selector="Button.BorderedAccentButton:pressed /template/ ContentPresenter">
+        <Setter Property="Background" Value="{DynamicResource GlobalDefaultAccent}"/>
+		<Setter Property="Foreground" Value="{DynamicResource DefaultAccentTextFill}"/>
+    </Style>
+	<Style Selector="Button.BorderedAccentButton:disabled">
+		<Setter Property="BorderBrush" Value="{DynamicResource DisabledAccent}"/>
+		<Setter Property="Foreground" Value="{DynamicResource DisabledAccent}"/>
+	</Style>
+</Styles>

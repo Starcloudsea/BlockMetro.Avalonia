@@ -1,11 +1,14 @@
 <Application xmlns="https://github.com/avaloniaui"
              xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
              x:Class="BlockMetro.Avalonia.UITest.App"
-			 xmlns:bm="using:BlockMetro.Avalonia.Styles"
+			 xmlns:bms="using:BlockMetro.Avalonia.Styles"
              RequestedThemeVariant="Default">
              <!-- "Default" ThemeVariant follows system theme variant. "Dark" or "Light" are other available options. -->
 
+	<Application.Resources>
+		<FontFamily x:Key="SourceHanSans">avares://BlockMetro.Avalonia.UITest/Assets/Fonts#Source Han Sans CN</FontFamily>
+	</Application.Resources>
     <Application.Styles>
-		
+		<bms:MetroTheme Theme="Light" Accent="BrightBlue"/>
     </Application.Styles>
 </Application>

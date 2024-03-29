@@ -17,6 +17,7 @@
 	
 	<!--TextFill-->
 	<Color x:Key="DefaultTextFill">#1A1A1A</Color>
+	<Color x:Key="DefaultAccentTextFill">#FFFFFF</Color>
 	<Color x:Key="SecondaryTextFill">#5C5C5C</Color>
 	<Color x:Key="TertiaryTextFill">#868686</Color>
 	<Color x:Key="DisabledTextFill">#9B9B9B</Color>

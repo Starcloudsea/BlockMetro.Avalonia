@@ -1,0 +1,77 @@
+<Styles xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+		xmlns:bmc="using:BlockMetro.Avalonia.Controls">
+	<Design.PreviewWith>
+		<Border Padding="50">
+				<DropDownButton Content="1145" Height="40" Width="150" IsEnabled="True">
+					<DropDownButton.Flyout>
+						<MenuFlyout>
+							<MenuItem Header="Item 2"/>
+							<MenuItem Header="Item 3"/>
+						</MenuFlyout>
+					</DropDownButton.Flyout>
+				</DropDownButton>
+		</Border>
+	</Design.PreviewWith>
+	<Style Selector="DropDownButton">
+		<Setter Property="Background" Value="{DynamicResource DefaultSubControlFill}"/>
+		<Setter Property="Foreground" Value="{DynamicResource DefaultTextFill}"/>
+		<Setter Property="FontSize" Value="17"/>
+		<Setter Property="HorizontalContentAlignment" Value="Center"/>
+		<Setter Property="VerticalContentAlignment" Value="Center"/>
+		<Setter Property="Template">
+			<Setter.Value>
+				<ControlTemplate>
+					<Border Name="RootBorder"
+							Background="{TemplateBinding Background}"
+							BorderBrush="{TemplateBinding BorderBrush}"
+							BorderThickness="{TemplateBinding BorderThickness}"
+							CornerRadius="{TemplateBinding CornerRadius}"
+							ClipToBounds="True">
+						<Grid Name="InnerGrid">
+							<ContentPresenter Name="PART_ContentPresenter"
+											  Content="{TemplateBinding Content}"
+											  ContentTemplate="{TemplateBinding ContentTemplate}"
+											  Padding="{TemplateBinding Padding}"
+											  RecognizesAccessKey="True"
+											  HorizontalContentAlignment="{TemplateBinding HorizontalContentAlignment}"
+											  VerticalContentAlignment="{TemplateBinding VerticalContentAlignment}" />
+							<bmc:FontIcon Glyph="&#xEA4E;"
+										  Foreground="{TemplateBinding Foreground}"
+								          Name="DropDownGlyph"
+										  FontSize="20"
+									      Height="20"
+									      Width="20"
+									      Margin="5,0,5,0"
+									      HorizontalAlignment="Right"
+									      VerticalAlignment="Center"/>
+						</Grid>
+					</Border>
+				</ControlTemplate>
+			</Setter.Value>
+		</Setter>
+	</Style>
+	<Style Selector="DropDownButton:pointerover /template/ ContentPresenter">
+		<Setter Property="Background" Value="{DynamicResource SecondarySubControlFill}"/>
+	</Style>
+	<Style Selector="DropDownButton:pressed /template/ ContentPresenter">
+		<Setter Property="Background" Value="{DynamicResource TertiarySubControlFill}"/>
+	</Style>
+	<Style Selector="DropDownButton /template/ bmc|FontIcon">
+		<Setter Property="Transitions">
+			<Transitions>
+				<ThicknessTransition Property="Margin" Duration="0:0:0.2" Easing="QuinticEaseIn"/>
+			</Transitions>
+		</Setter>
+		<Setter Property="Margin" Value="5,0,5,0"/>
+	</Style>
+	<Style Selector="DropDownButton:pressed /template/ bmc|FontIcon">
+
+		<Setter Property="Margin" Value="5,7,5,0"/>
+	</Style>
+	<Style Selector="DropDownButton:disabled">
+		<Setter Property="Background" Value="{DynamicResource DisabledControlFill}"/>
+		<Setter Property="Foreground" Value="{DynamicResource DisabledTextFill}"/>
+	</Style>
+	
+</Styles>
